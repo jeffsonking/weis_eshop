@@ -1,4 +1,4 @@
- <template>
+<template>
   <header class="header">
     <slot name="search"></slot>
     <a class="header_title">
@@ -44,6 +44,7 @@
       width 50%
       color #fff
       text-align center
+      margin-left -5%
       .header_title_text
         font-size 20px
         color #fff

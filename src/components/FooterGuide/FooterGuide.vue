@@ -1,4 +1,3 @@
-<!-- 底部组件 -->
 <template>
   <footer class="footer_guide border-1px">
     <div class="guide_item" @click="goto('/msite')" :class="{on: isCurrent('/msite')}">
@@ -29,16 +28,17 @@
 </template>
 
 <script>
-export default {
-  methods:{
-    goto(path){
-      this.$router.replace(path)
-    },
-    isCurrent(path){
-      return this.$route.path === path
+  export default {
+    methods: {
+      goto(path) {
+        this.$router.replace(path)
+      },
+      isCurrent(path) {
+        // console.log(this.$route.path)
+        return this.$route.path === path
+      }
     }
   }
-}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
